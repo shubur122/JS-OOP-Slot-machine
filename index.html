@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAZAAARD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>Colors</h1>
+
+    <section class="game">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </section>
+
+    <section class="play">
+      <span class="result"></span><br>
+      <input type="number" placeholder="BID" id="bid" min ="1" onkeyup="if(this.value<1){this.value= 1}" step="1" pattern="\d+">
+      <button id="start">SPIN!</button>
+    </section>
+
+    <section class="panel">BALANCE: <span class="wallet"></span></section>
+
+    <section class="score">
+      Played: <span class="number"></span><br> 
+      WINS: <span class="wins"></span><br>
+      LOSSES:<span class="losses"></span>
+    </section>
+
+  </div>
+  <script src="Wallet.js"></script>
+  <script src="Statistics.js"></script>
+  <script src="Draw.js"></script>
+  <script src="Result.js"></script>
+  <script src="Game.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
